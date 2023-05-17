@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@media only screen and (max-width: 425px) {
+  .home_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16vw;
+    letter-spacing: 4px;
+  }
+
+  .home_title--purple {
+    color: #792262;
+  }
+}
