@@ -5,6 +5,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16vw;
     letter-spacing: 4px;
+    opacity: 0;
+  }
+
+  .home_title--visible {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16vw;
+    letter-spacing: 4px;
     animation: fade 7s ease;
   }
 
