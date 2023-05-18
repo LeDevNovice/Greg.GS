@@ -10,4 +10,14 @@
   .home_title--purple {
     color: #792262;
   }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 }
