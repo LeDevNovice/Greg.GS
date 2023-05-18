@@ -4,16 +4,25 @@ import './Title.css';
 
 function Title() {
   const [visible, setVisible] = useState(false);
+  const [minimize, setMinimize] = useState(false);
 
   // ADD ANOTHER TIMEOUT FOR ANOTHER STATE TO ACTIVE THE OTHER ANIMATIONS IN FUNCTION OF PREVIOUS ONE TIME
   useEffect(() => {
     setTimeout(() => {
       setVisible(true);
     }, 1000);
+
+    setTimeout(() => {
+      setMinimize(true);
+    }, 4500);
   }, []);
 
   return (
-    <h1 className={`home_title${visible ? '--visible' : ''}`}>
+    <h1
+      className={`home_title${visible ? '--visible' : ''}${
+        minimize ? '--minimize' : ''
+      }`}
+    >
       GREG<span className="home_title--purple">.</span>GS
     </h1>
   );
