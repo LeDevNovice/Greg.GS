@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16vw;
     letter-spacing: 4px;
+    animation: fade 7s ease;
   }
 
   .home_title--purple {
