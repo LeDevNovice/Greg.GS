@@ -6,10 +6,9 @@ function Title() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Set the visibility to true after a short delay to trigger the animation
     setTimeout(() => {
       setVisible(true);
-    }, 1000); // Adjust the delay as needed
+    }, 1000);
   }, []);
 
   return (
