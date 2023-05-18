@@ -1,4 +1,5 @@
 import Title from './Title/Title';
+
 import './Home.css';
 
 function Home() {
