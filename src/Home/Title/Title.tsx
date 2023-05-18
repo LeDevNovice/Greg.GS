@@ -5,6 +5,7 @@ import './Title.css';
 function Title() {
   const [visible, setVisible] = useState(false);
 
+  // ADD ANOTHER TIMEOUT FOR ANOTHER STATE TO ACTIVE THE OTHER ANIMATIONS IN FUNCTION OF PREVIOUS ONE TIME
   useEffect(() => {
     setTimeout(() => {
       setVisible(true);
