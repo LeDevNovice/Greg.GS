@@ -43,6 +43,27 @@
 
   to {
     font-size: 5vw;
-    transform: translate(-50px, -100px);
+    transform: translate(-10vw, -25vh);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home_title--visible--minimize {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vw;
+    letter-spacing: 4px;
+    animation: minimize 0.75s linear forwards;
+  }
+
+  @keyframes minimize {
+    from {
+      font-size: 16vw;
+      transform: translate(0, 0);
+    }
+
+    to {
+      font-size: 12vw;
+      transform: translate(0, -30vh);
+    }
   }
 }
