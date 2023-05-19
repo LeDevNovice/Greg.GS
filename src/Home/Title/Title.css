@@ -18,6 +18,7 @@
   width: 10vw;
   border-bottom: 3px solid #792262;
   transform: translate(-10vw, -15vh);
+  opacity: 0;
 }
 
 .home_title-name {
@@ -35,6 +36,7 @@
   padding-bottom: 16px;
   letter-spacing: 4px;
   transform: translate(-10vw, -18vh);
+  opacity: 0;
 }
 
 .home_title-name--visible {
@@ -42,6 +44,23 @@
   font-size: 16vw;
   margin: 0;
   letter-spacing: 4px;
+  animation: fade 3s linear;
+}
+
+.home_title-job--visible {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vw;
+  margin: 0;
+  padding-bottom: 16px;
+  transform: translate(-10vw, -18vh);
+  letter-spacing: 4px;
+  animation: fade 3s linear;
+}
+
+.home_title--border--visible {
+  width: 10vw;
+  border-bottom: 3px solid #792262;
+  transform: translate(-10vw, -15vh);
   animation: fade 3s linear;
 }
 

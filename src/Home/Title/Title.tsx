@@ -4,33 +4,42 @@ import StartMessage from './StartMessage/StartMessage';
 import './Title.css';
 
 function Title() {
-  const [visible, setVisible] = useState(false);
+  const [visibleTitle, setVisibleTitle] = useState(false);
+  const [visibleSubtitle, setVisibleSubtitle] = useState(false);
+  const [visibleBorder, setVisibleBorder] = useState(false);
   const [minimize, setMinimize] = useState(false);
 
   // ADD ANOTHER TIMEOUT FOR ANOTHER STATE TO ACTIVE THE OTHER ANIMATIONS IN FUNCTION OF PREVIOUS ONE TIME
   useEffect(() => {
     setTimeout(() => {
-      setVisible(true);
+      setVisibleTitle(true);
     }, 1000);
 
     setTimeout(() => {
       setMinimize(true);
     }, 4500);
+
+    setTimeout(() => {
+      setVisibleSubtitle(true);
+      setVisibleBorder(true);
+    }, 6000);
   }, []);
 
   return (
     <section className="home_title">
       <h1
-        className={`home_title-name${visible ? '--visible' : ''}${
+        className={`home_title-name${visibleTitle ? '--visible' : ''}${
           minimize ? '--minimize' : ''
         }`}
       >
         GREG<span className="home_title--purple">.</span>GS
       </h1>
-      <h1 className="home_title-job">
+      <h1 className={`home_title-job${visibleSubtitle ? '--visible' : ''}`}>
         DEV BACK-END<span className="home_title--purple">.</span>JS
       </h1>
-      <div className="home_title--border"></div>
+      <div
+        className={`home_title--border${visibleBorder ? '--visible' : ''}`}
+      ></div>
       <StartMessage />
     </section>
   );
