@@ -18,13 +18,19 @@ function Title() {
   }, []);
 
   return (
-    <h1
-      className={`home_title${visible ? '--visible' : ''}${
-        minimize ? '--minimize' : ''
-      }`}
-    >
-      GREG<span className="home_title--purple">.</span>GS
-    </h1>
+    <section className="home_title">
+      <h1
+        className={`home_title-name${visible ? '--visible' : ''}${
+          minimize ? '--minimize' : ''
+        }`}
+      >
+        GREG<span className="home_title--purple">.</span>GS
+      </h1>
+      <h1 className="home_title-job">
+        DEV BACK-END<span className="home_title--purple">.</span>JS
+      </h1>
+      <div className="home_title--border"></div>
+    </section>
   );
 }
 

@@ -1,0 +1,18 @@
+.home_socials {
+  position: fixed;
+  padding: 8px 0px 0px 8px;
+}
+
+.home_socials-icon {
+  color: #792262;
+  font-size: 2vw;
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 450px) {
+  .home_socials-icon {
+    color: #792262;
+    font-size: 4vw;
+    padding-right: 16px;
+  }
+}
