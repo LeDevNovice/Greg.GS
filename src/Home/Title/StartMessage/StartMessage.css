@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.home_startMessage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  color: #792262;
+  letter-spacing: 4px;
+  transform: translate(-10vw, 0);
+}
+
+.home_startMessage-content {
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

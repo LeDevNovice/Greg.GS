@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import StartMessage from './StartMessage/StartMessage';
 
 import './Title.css';
 
@@ -30,6 +31,7 @@ function Title() {
         DEV BACK-END<span className="home_title--purple">.</span>JS
       </h1>
       <div className="home_title--border"></div>
+      <StartMessage />
     </section>
   );
 }
