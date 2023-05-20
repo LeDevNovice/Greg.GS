@@ -45,6 +45,15 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .home_startMessage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    color: #792262;
+    letter-spacing: 4px;
+    transform: translateX(2vw);
+    opacity: 0;
+  }
+
   .home_startMessage--visible {
     font-family: 'Montserrat', sans-serif;
     font-size: 4vw;
