@@ -57,4 +57,28 @@
     font-size: 4vw;
     padding-right: 16px;
   }
+
+  .home_socials-icon--visible {
+    color: #792262;
+    font-size: 4vw;
+    padding-right: 16px;
+    animation: bounceAppear 1s forwards;
+  }
+
+  @keyframes bounceAppear {
+    0% {
+      opacity: 1;
+      font-size: 0.1vw;
+    }
+
+    50% {
+      opacity: 1;
+      font-size: 6vw;
+    }
+
+    100% {
+      opacity: 1;
+      font-size: 4vw;
+    }
+  }
 }

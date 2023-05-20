@@ -43,3 +43,15 @@
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .home_startMessage--visible {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    color: #792262;
+    letter-spacing: 4px;
+    text-align: center;
+    transform: translateX(2vw);
+    animation: fade 2s linear;
+  }
+}
