@@ -4,7 +4,7 @@ import './Background.css';
 
 const FADE_IN_DELAY = 6000;
 
-function Background() {
+function Background(): JSX.Element {
   const [backgroundVisible, setBackgroundVisible] = useState(false);
 
   useEffect(() => {
