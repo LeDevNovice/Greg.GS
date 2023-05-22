@@ -2,13 +2,17 @@ import { useState, useEffect } from 'react';
 
 import './Background.css';
 
+const FADE_IN_DELAY = 6000;
+
 function Background() {
   const [backgroundVisible, setBackgroundVisible] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setBackgroundVisible(true);
-    }, 6000);
+    }, FADE_IN_DELAY);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
