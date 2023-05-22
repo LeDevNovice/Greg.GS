@@ -3,6 +3,10 @@ import StartMessage from './StartMessage/StartMessage';
 
 import './Title.css';
 
+const ANIMATION_DELAY_FIRST = 1000;
+const ANIMATION_DELAY_SECOND = 4500;
+const ANIMATION_DELAY_THIRD = 6000;
+
 function Title(): JSX.Element {
   const [visibleTitle, setVisibleTitle] = useState(false);
   const [visibleSubtitle, setVisibleSubtitle] = useState(false);
@@ -13,16 +17,16 @@ function Title(): JSX.Element {
   useEffect(() => {
     setTimeout(() => {
       setVisibleTitle(true);
-    }, 1000);
+    }, ANIMATION_DELAY_FIRST);
 
     setTimeout(() => {
       setMinimize(true);
-    }, 4500);
+    }, ANIMATION_DELAY_SECOND);
 
     setTimeout(() => {
       setVisibleSubtitle(true);
       setVisibleBorder(true);
-    }, 6000);
+    }, ANIMATION_DELAY_THIRD);
   }, []);
 
   return (

@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import './StartMessage.css';
 
+const FADE_IN_DELAY = 9000;
+
 function StartMessage(): JSX.Element {
   const [visibleStartMessage, setVisibleStartMessage] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -13,7 +15,7 @@ function StartMessage(): JSX.Element {
 
     setTimeout(() => {
       setVisibleStartMessage(true);
-    }, 9000);
+    }, FADE_IN_DELAY);
 
     window.addEventListener('resize', handleResize);
 
