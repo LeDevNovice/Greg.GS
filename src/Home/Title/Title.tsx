@@ -16,6 +16,10 @@ function Title(): JSX.Element {
 
   // ADD ANOTHER TIMEOUT FOR ANOTHER STATE TO ACTIVE THE OTHER ANIMATIONS IN FUNCTION OF PREVIOUS ONE TIME
   useEffect(() => {
+    const handleKeyDown = () => {
+      setKeyPressed(true);
+    };
+
     setTimeout(() => {
       setVisibleTitle(true);
     }, ANIMATION_DELAY_FIRST);
