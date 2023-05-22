@@ -3,7 +3,7 @@ import StartMessage from './StartMessage/StartMessage';
 
 import './Title.css';
 
-function Title() {
+function Title(): JSX.Element {
   const [visibleTitle, setVisibleTitle] = useState(false);
   const [visibleSubtitle, setVisibleSubtitle] = useState(false);
   const [visibleBorder, setVisibleBorder] = useState(false);

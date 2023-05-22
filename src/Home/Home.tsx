@@ -5,7 +5,7 @@ import Background from './Background/Background';
 
 import './Home.css';
 
-function Home() {
+function Home(): JSX.Element {
   return (
     <div className="home">
       <Socials />

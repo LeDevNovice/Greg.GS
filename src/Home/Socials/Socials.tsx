@@ -8,7 +8,12 @@ import {
 
 import './Socials.css';
 
-function Socials() {
+const SOCIALS_DELAY = 6000;
+const FIRST_SOCIAL_DELAY = 6500;
+const SECOND_SOCIAL_DELAY = 7000;
+const THIRD_SOCIAL_DELAY = 7500;
+
+function Socials(): JSX.Element {
   const [visibleSocials, setVisibleSocials] = useState(false);
   const [visibleFirstSocial, setVisibleFirstSocial] = useState(false);
   const [visibleSecondSocial, setVisibleSecondSocial] = useState(false);
@@ -17,19 +22,19 @@ function Socials() {
   useEffect(() => {
     setTimeout(() => {
       setVisibleSocials(true);
-    }, 6000);
+    }, SOCIALS_DELAY);
 
     setTimeout(() => {
       setVisibleFirstSocial(true);
-    }, 6500);
+    }, FIRST_SOCIAL_DELAY);
 
     setTimeout(() => {
       setVisibleSecondSocial(true);
-    }, 7000);
+    }, SECOND_SOCIAL_DELAY);
 
     setTimeout(() => {
       setVisibleThirdSocial(true);
-    }, 7500);
+    }, THIRD_SOCIAL_DELAY);
   }, []);
 
   return (

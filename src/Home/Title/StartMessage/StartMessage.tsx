@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import './StartMessage.css';
 
-function StartMessage() {
+function StartMessage(): JSX.Element {
   const [visibleStartMessage, setVisibleStartMessage] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
