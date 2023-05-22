@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.home_startMessage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  color: #792262;
+  letter-spacing: 4px;
+  transform: translate(-10vw, 0);
+  opacity: 0;
+}
+
+.home_startMessage-content {
+  animation: fadeInOut 1s infinite;
+}
+
+.home_startMessage--visible {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  color: #792262;
+  letter-spacing: 4px;
+  transform: translate(-10vw, 0);
+  animation: fade 2s linear;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home_startMessage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    padding: 0 10vw;
+    color: #792262;
+    letter-spacing: 4px;
+    transform: translateX(2vw);
+    opacity: 0;
+  }
+
+  .home_startMessage--visible {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    padding: 0 10vw;
+    color: #792262;
+    letter-spacing: 4px;
+    text-align: center;
+    transform: translateX(2vw);
+    animation: fade 2s linear;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  .home_startMessage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: #792262;
+    letter-spacing: 4px;
+    transform: translate(-15vw, 0);
+    opacity: 0;
+  }
+
+  .home_startMessage--visible {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: #792262;
+    letter-spacing: 4px;
+    transform: translate(-15vw, 0);
+    animation: fade 2s linear;
+  }
+}
