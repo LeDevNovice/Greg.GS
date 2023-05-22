@@ -32,6 +32,8 @@ function Title(): JSX.Element {
       setVisibleSubtitle(true);
       setVisibleBorder(true);
     }, ANIMATION_DELAY_THIRD);
+
+    window.addEventListener('keydown', handleKeyDown);
   }, []);
 
   return (
