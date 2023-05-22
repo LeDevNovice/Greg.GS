@@ -51,7 +51,7 @@ function Title(): JSX.Element {
       <div
         className={`home_title--border${visibleBorder ? '--visible' : ''}`}
       ></div>
-      <StartMessage />
+      {keyPressed ? <h1>Hello World !</h1> : <StartMessage />}
     </section>
   );
 }
