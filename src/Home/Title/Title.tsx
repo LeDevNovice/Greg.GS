@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import StartMessage from './StartMessage/StartMessage';
 
 import './Title.css';
+import Menu from '../Menu/Menu';
 
 const ANIMATION_DELAY_FIRST = 1000;
 const ANIMATION_DELAY_SECOND = 4500;
@@ -51,7 +52,7 @@ function Title(): JSX.Element {
       <div
         className={`home_title--border${visibleBorder ? '--visible' : ''}`}
       ></div>
-      {keyPressed ? <h1>Hello World !</h1> : <StartMessage />}
+      {keyPressed ? <Menu /> : <StartMessage />}
     </section>
   );
 }
