@@ -12,6 +12,7 @@ function Title(): JSX.Element {
   const [visibleSubtitle, setVisibleSubtitle] = useState(false);
   const [visibleBorder, setVisibleBorder] = useState(false);
   const [minimize, setMinimize] = useState(false);
+  const [keyPressed, setKeyPressed] = useState(false);
 
   // ADD ANOTHER TIMEOUT FOR ANOTHER STATE TO ACTIVE THE OTHER ANIMATIONS IN FUNCTION OF PREVIOUS ONE TIME
   useEffect(() => {
