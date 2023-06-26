@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 .home_startMessage {
+  position: fixed;
   font-family: 'Montserrat', sans-serif;
   font-size: 2vw;
   color: #792262;
   letter-spacing: 4px;
-  transform: translate(-10vw, 0);
+  transform: translate(-10vw, 20vh);
   opacity: 0;
 }
 
@@ -14,11 +15,12 @@
 }
 
 .home_startMessage--visible {
+  position: fixed;
   font-family: 'Montserrat', sans-serif;
   font-size: 2vw;
   color: #792262;
   letter-spacing: 4px;
-  transform: translate(-10vw, 0);
+  transform: translate(-10vw, 20vh);
   animation: fade 2s linear;
 }
 

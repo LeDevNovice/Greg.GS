@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.home__menu {
+  position: fixed;
+  transform: translate(-30vw, 25vh);
+  display: flex;
+  flex-direction: column;
+}
+
+.home__menu-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5vw;
+  letter-spacing: 4px;
+  padding-bottom: 16px;
+}
+
+.home__menu-item:nth-child(2) {
+  transform: translateX(5vw);
+}
+
+.home__menu-item:nth-child(3) {
+  transform: translateX(10vw);
+}
