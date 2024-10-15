@@ -1,29 +1,31 @@
+/* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.container {
+/* STYLES */
+.landingPageContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Assure une hauteur minimale égale à la hauteur de la fenêtre et donc le centrage du titre verticalement */
     background-color: #FEFEFE;
 }
 
-.title {
+.landingPageTitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10vw;
+    font-size: 10vw; /* La taille de la police est égale à 10% de la largeur de la fenêtre et donc responsif peu importe l'écran */
     color: #000000;
-    animation: fadeIn 5s linear;
+    opacity: 0;
+    animation: fadeIn 5s forwards linear;
+    animation-delay: 1s;
     text-align: center;
 }
 
-.dot {
+.landingPageTitle__dot {
     color: #792262;
 }
 
+/* ANIMATIONS */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
     to {
         opacity: 1;
     }
